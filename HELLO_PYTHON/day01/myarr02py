@@ -1,0 +1,9 @@
+arr = ["홍길동","전우치"]
+
+arr.append("이순신")
+# arr.remove("전우치")
+# insert는 len(arr) 마지막 숫자반환 append랑 똑같은 기능
+arr.insert(len(arr),"춘향이")
+print(arr)
+
+

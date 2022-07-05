@@ -1,0 +1,55 @@
+<%@page import="kr.co.aiai.dao.EmpVO"%>
+<%@page import="java.util.ArrayList"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%
+	EmpVO vo = (EmpVO) request.getAttribute("emp");
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+
+function fn_list(){
+	location.href = "emp_list"
+
+}
+function fn_mod(){
+	location.href = "emp_mod?e_id=<%=vo.getE_id()%>"
+
+}
+function fn_del(){
+	location.href = "emp_list"
+
+}
+
+</script>
+</head>
+<body>
+	
+	<table border="1px" style="width: 200px">
+		<tr>
+			<td>사번</td>
+			<td colspan="2"><%=vo.getE_id()%></td>
+		</tr>
+		<tr>
+			<td>이름</td>
+			<td colspan="2"><%=vo.getE_name()%></td>
+		</tr>
+		<tr>
+			<td>성별</td>
+			<td colspan="2"><%=vo.getSex()%></td>
+		</tr>
+		<tr>
+			<td>주소</td>
+			<td colspan="2"><%=vo.getAddr()%></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="목록" onclick="fn_act()"></td>
+		</tr>
+	</table>
+</body>
+</html>

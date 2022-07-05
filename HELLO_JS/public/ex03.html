@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.it{
+	width: 20px;
+}
+</style>
+</head>
+<body>
+
+<input type="text" class="it">
++
+<input type="text" class="it">
+<input type="button" value="=" onclick="sum()">
+<input type="text" class="it">
+
+<script type="text/javascript">
+function sum(){
+
+let firstNum = parseInt(document.getElementsByClassName("it")[0].value);
+console.log(firstNum);
+	
+let secondNum = parseInt(document.getElementsByClassName("it")[1].value);
+console.log(secondNum);
+
+let sumNum = firstNum + secondNum;
+document.getElementsByClassName("it")[2].value = sumNum;
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+
+</style>
+</head>
+<body>
+<table border="1px">
+ <tr>
+ 	<td>
+ 		<div class="mydiv">__</div>
+ 	</td>
+ 	<td>
+ 		<div class="mydiv">__</div>
+ 	</td>
+ 	<td>
+ 		<div class="mydiv">__</div>
+ 	</td>
+ 	<td>
+ 		<div class="mydiv">__</div>
+ 	</td>
+ 	<td>
+ 		<div class="mydiv">__</div>
+ 	</td>
+ 	<td>
+ 		<div class="mydiv">__</div>
+ 	</td>
+ </tr>
+ 
+ <tr>
+ 	<td colspan="6">
+ 		<input type="button" value="로또생성하기" style="width: 100%" onclick="play()">
+ 	</td>
+ 
+ </tr>
+ 
+</table>
+
+<script type="text/javascript">
+let lottoNum = [];
+function shuffle(array) {
+	  array.sort(() => Math.random() - 0.5);
+	}
+
+
+
+function play(){
+	
+	lottoNum = [];
+	for(k=0; k < 45; k++){
+		lottoNum[k] = k +1;
+	}
+	console.log("번호 생성 >> ", lottoNum);
+	shuffle(lottoNum);
+	console.log("셔플 후  >>", lottoNum);
+	let sortedNum = [];
+	for (var i = 0; i < 6; i++) {
+		sortedNum[i] = lottoNum[i];
+	}
+	console.log("6개 저장후  >>", sortedNum);
+	
+	sortedNum.sort(function(a, b){return a - b});
+	console.log("6개 정렬  >>", sortedNum);
+	
+	let objs = document.querySelectorAll('.mydiv');
+	for (var j = 0; j < 6; j++) {
+	objs[j].innerText = sortedNum[j];
+	}
+}
+</script>
+
+</body>
+</html>

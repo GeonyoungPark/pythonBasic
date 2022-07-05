@@ -1,0 +1,48 @@
+<%@page import="kr.co.aiai.dao.EmpVO"%>
+<%@page import="java.util.ArrayList"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%
+	EmpVO vo = (EmpVO) request.getAttribute("emp");
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="emp_mod_act" method="post">
+		<table border="1px" style="width: 200px">
+			<tr>
+				<td>사번</td>
+				
+				<td colspan="2">
+				<input type="text" name="e_id" value="<%=vo.getE_id()%>"/>
+				</td>
+			</tr>
+			<tr>
+				<td>이름</td>
+				<td colspan="2">
+				<input type="text" name="e_name" value="<%=vo.getE_name()%>"/>
+				</td>
+			</tr>
+			<tr>
+				<td>성별</td>
+				<td colspan="2">
+				<input type="text" name="e_sex" value="<%=vo.getSex()%>"/>
+				</td>
+			</tr>
+			<tr>
+				<td>주소</td>
+				<td colspan="2">
+				<input type="text" name="e_addr" value="<%=vo.getAddr()%>"/>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="실행"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

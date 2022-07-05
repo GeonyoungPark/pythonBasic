@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+input[type="text"]{
+ width : 30px;
+}
+</style>
+</head>
+<body>
+<input type="text" id="it_a"/>에서
+<input type="text" id="it_b"/>까지
+<input type="text" id="it_c"/>
+<input type="button" value="배수의 합은" onclick="myClick()"/>
+<input type="text" id="it_d"/>
+
+
+<script type="text/javascript">
+function myClick(){
+	let a = parseInt(document.getElementById("it_a").value);
+	let b = parseInt(document.getElementById("it_b").value);
+	let c = parseInt(document.getElementById("it_c").value);
+	let sum = 0;
+	for (var i = a; i <= b; i++) {
+		if(i%c == 0){
+			sum+=i;
+		}
+	}
+	document.getElementById('it_d').value = sum;
+}
+</script>
+</body>
+</html>

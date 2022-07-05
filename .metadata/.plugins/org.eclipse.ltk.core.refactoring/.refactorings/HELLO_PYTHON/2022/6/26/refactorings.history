@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;HELLO_PYTHON/day04/__init__.py&apos; to &apos;myqt.py&apos;" description="Rename resource &apos;__init__.py&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="day04/__init__.py" name="myqt.py" stamp="1655954866402" updateReferences="true"/>
+</session>

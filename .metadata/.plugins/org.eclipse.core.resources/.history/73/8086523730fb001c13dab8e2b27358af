@@ -1,0 +1,9 @@
+package kr.co.aiai.dao;
+
+public class EmpVO {
+	private String e_id = "";
+	private String e_name= "";
+	private String sex = "";
+	private String addr = "";
+	
+}

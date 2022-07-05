@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.it{
+	width:30px;
+}
+</style>
+<script type="text/javascript">
+function play(){
+	
+	let idx = parseInt(Math.random()*3);
+	let comArr = ["가위","바위","보"];
+	
+	let me = document.getElementById('itMine').value;
+	let com = document.getElementById('itCom').value = comArr[idx];
+	console.log(me);
+	console.log(com);
+	let result = document.getElementById('itResult');
+	if (me===com) {
+		result.value ="비김";
+	}else if(me==="가위" && com==="보"
+			|| me==="바위" && com==="가위"
+			|| me==="보" && com==="바위"){
+		result.value ="이김";
+	}else{
+		result.value ="짐";
+	}
+	
+}
+function enterEvent(e){
+if (e.key == "Enter") {
+	play()
+	}
+}
+</script>
+</head>
+<body>
+<table border="1px">
+	<tr>
+		<td>나</td>
+		<td>
+			<input type="text" class="it" id="itMine" onkeydown="enterEvent(event)">
+		</td>
+	</tr>
+	
+	<tr>
+		<td>컴:</td>
+		<td>
+			<input type="text" class="it" id="itCom">
+		</td>
+	</tr>
+	
+	<tr>
+		<td>결과:</td>
+		<td>
+			<input type="text" class="it" id="itResult">
+		</td>
+	</tr>
+	
+	<tr>
+		<td colspan="2">
+			<input type="button" value="게임하기" style="width:100%" onclick="play()">
+		</td>
+	</tr>
+
+</table>
+
+
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.it{
+	 width : 30px;
+}
+</style>
+</head>
+<body>
+<table border="1px">
+	<tr>
+		<td>첫별수</td>
+		<td>
+			<input type="text" id="it_first" class="it">
+		</td>
+	</tr>
+	<tr>
+		<td>끝별수</td>
+		<td>
+			<input type="text" id="it_last" class="it">
+		</td>
+	</tr>
+	
+	<tr>
+		<td colspan="2">
+			<input type="button" value="별출력하기" style="width: 200px" onclick="play()">
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="height: 200px">
+			<div id="mydiv"></div>
+		</td>
+	</tr>
+</table>
+
+<script type="text/javascript">
+let firstNum;
+let lastNum;
+
+let str = "";
+
+function play(){
+	firstNum = document.getElementById('it_first').value;
+	lastNum = document.getElementById('it_last').value;
+	console.log(firstNum);
+	console.log(lastNum);
+	for (var i = firstNum; i <= lastNum; i++) {
+		str += drawstars(i);
+	}
+	document.getElementById('mydiv').innerHTML = str;
+	 
+}
+
+function drawstars(cnt){
+	let ret ="";
+	for (var j = 0; j < cnt; j++) {
+		ret +="*"
+	}
+	ret += "<br/>"
+	return ret;
+}
+</script>
+
+</body>
+</html>

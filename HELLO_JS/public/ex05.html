@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.it{
+	width:30px;
+}
+</style>
+</head>
+<body>
+<table border="1px">
+	<tr>
+		<td>나</td>
+		<td>
+			<input type="text" class="it" id="it_mine">
+		</td>
+	</tr>
+	
+	<tr>
+		<td>컴:</td>
+		<td>
+			<input type="text" class="it" id="it_com">
+		</td>
+	</tr>
+	
+	<tr>
+		<td>결과:</td>
+		<td>
+			<input type="text" class="it" id="it_result">
+		</td>
+	</tr>
+	
+	<tr>
+		<td colspan="2">
+			<input type="button" value="게임하기" style="width:100%" onclick="play()">
+		</td>
+	</tr>
+
+</table>
+
+<script type="text/javascript">
+function play(){
+	let me = document.getElementById("it_mine").value;
+	let com = document.getElementById("it_com");
+	let idx = Math.random();
+	console.log(idx);
+	if (idx > 0.5) {
+		com.value = "홀"
+	}else{
+		com.value = "짝"
+	}
+	com = document.getElementById("it_com").value;
+	let result = document.getElementById("it_result");
+	if (me===com) {
+		result.value = "이김";
+	}else{
+		result.value = "짐";
+	}
+}
+	
+</script>
+
+</body>
+</html>

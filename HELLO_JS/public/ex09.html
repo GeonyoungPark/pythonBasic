@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.btn{
+	width: 100%;
+}
+#it{
+ text-align:right;
+}
+
+
+</style>
+</head>
+<body>
+<table border="1px">
+	<tr>
+		<td colspan="3">
+			<input type="text" style="width: 100px" id="it"/>
+		</td>	
+	</tr>
+	<tr>
+		<td>
+			<input type="button" class="btn" value="1" onclick="addNum(0)"/>
+		</td>
+		<td>
+			<input type="button" class="btn" value="2" onclick="addNum(1)"/>
+		</td>
+		<td>
+			<input type="button" class="btn" value="3" onclick="addNum(2)"/>
+		</td>	
+	</tr>
+	<tr>
+		<td>
+			<input type="button" class="btn" value="4" onclick="addNum(3)"/>
+		</td>
+		<td>
+			<input type="button" class="btn" value="5" onclick="addNum(4)"/>
+		</td>
+		<td>
+			<input type="button" class="btn" value="6" onclick="addNum(5)"/>
+		</td>	
+	</tr>
+	<tr>
+		<td>
+			<input type="button" class="btn" value="7" onclick="addNum(6)"/>
+		</td>
+		<td>
+			<input type="button" class="btn" value="8" onclick="addNum(7)"/>
+		</td>
+		<td>
+			<input type="button" class="btn" value="9" onclick="addNum(8)"/>
+		</td>	
+	</tr>
+	<tr>
+		<td>
+			<input type="button" class="btn" value="0" onclick="addNum(9)"/>
+		</td>
+		<td colspan="2">
+			<input type="button" class="btnCall" value="call" onclick="alerting()"/>
+		</td>	
+	</tr>
+</table>
+
+<script type="text/javascript">
+let num = "";
+function addNum(i){
+	num += document.getElementsByClassName("btn")[i].value;
+	document.getElementById('it').value = num;
+}
+function alerting(){
+	alert("Calling >> " + num);
+}
+</script>
+
+</body>
+</html>

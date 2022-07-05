@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+table{
+	border : solid red 1px;
+}
+</style>
+</head>
+<body>
+
+<table>
+	<tr>
+		<td>출력단수</td>
+		<td>
+			<input type="text" id="it" style="width: 30px">
+		</td>
+	</tr>
+	
+	<tr>
+		<td colspan="2">
+			<input type="button" value="출력하기" style="width: 100%" onclick="doit()">
+		</td>
+	</tr>
+	
+	<tr>
+		<td colspan="2" id="mytd" style="height: 200px">
+		</td>
+	</tr>
+
+
+</table>
+
+
+
+
+<script type="text/javascript">
+function doit(){
+	let myTd = document.getElementById('mytd');
+		let dan = parseInt(document.getElementById("it").value);
+	for(i=1; i<=9;i++){
+		myTd.innerHTML += dan + "X" + i + "=" + (dan*i)+ "<br>"; 
+	}
+}
+</script>
+
+</body>
+</html>

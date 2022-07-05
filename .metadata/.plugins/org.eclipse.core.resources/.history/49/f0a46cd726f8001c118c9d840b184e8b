@@ -1,0 +1,16 @@
+import pymysql
+from sqlalchemy.dialects.mysql import mysqldb
+
+conn = pymysql.connect(host='127.0.0.1', user='root', password='python', db='mysql', charset='utf8')
+
+cur = connect.cursor()
+
+sql = "select * from emp"
+vals = ("e_id","e_name","sex","addr")
+cur.execute(sql,vals)
+
+for row in cur:
+        print(row[0], row[1], row[2], row[3])
+        
+
+conn.close()
