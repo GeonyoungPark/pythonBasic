@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function fn_done(){
+	location.href = "emp_add_act?";
+}
+</script>
+</head>
+<body>
+<form action="emp_add_act" method="post">
+<table border=1px>
+<tr>
+	<td>사번</td>
+</tr>
+
+<tr>
+	<td>이름</td>
+	<td><input type="text" value="" name="e_name"> </td>
+</tr>
+<tr>
+	<td>성별</td>
+	<td><input type="text" value="" name="sex"> </td>
+</tr>
+<tr>
+	<td>주소</td>
+	<td><input type="text" value="" name="addr"> </td>
+</tr>
+
+<tr>
+	<td colspan="2">
+		
+		<input type="submit" value="확인">
+	
+	</td>
+</tr>
+
+</table>
+</form>
+
+</body>
+</html>

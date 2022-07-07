@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+</style>
+</head>
+<body>
+<table border=1px>
+<tr>
+	<td>사번</td>
+	<td> <input type="text" value="{{emp.e_id}}"> </td>
+</tr>
+
+<tr>
+	<td>이름</td>
+	<td>{{emp.e_id}}</td>
+</tr>
+<tr>
+	<td>성별</td>
+	<td>{{emp.sex}}</td>
+</tr>
+<tr>
+	<td>주소</td>
+	<td>{{emp.addr}}</td>
+</tr>
+
+<tr>
+	<td colspan="2">
+		<input type="button" value="목록">
+		<input type="button" value="수정" onclick="fn_mod()">
+		<input type="button" value="삭제">
+	
+	</td>
+</tr>
+	ss
+
+</table>
+<script type="text/javascript">
+function fn_mod(){
+	location.href = "emp_mod?e_id=<%=emp.getE_id()%>";
+
+}
+
+</script>
+</body>
+</html>

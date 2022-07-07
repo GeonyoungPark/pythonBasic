@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function done(){
+	location.href = "emp_mod_act?e_id={{e.e_id}}&e_name={{e.e_name}}&sex={{e.sex}}&addr={{e.addr}}";
+}
+</script>
+</head>
+<body>
+</body>
+</html>

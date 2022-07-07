@@ -15,4 +15,5 @@ where
 cnt = curs.execute(sql)
 print(cnt)
 conn.commit()
+ 
 conn.close()

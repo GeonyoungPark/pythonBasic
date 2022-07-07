@@ -7,8 +7,9 @@ curs = conn.cursor()
 
 sql = "select * from emp"
 curs.execute(sql)
- 
 
 rows = curs.fetchall()
 print(rows)     
+
+curs.close()
 conn.close()

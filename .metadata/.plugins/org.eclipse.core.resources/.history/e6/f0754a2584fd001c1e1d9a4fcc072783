@@ -1,0 +1,21 @@
+"{{e.e_id}}" <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+</script>
+</head>
+<body>
+<script type="text/javascript">
+let cnt = "{{cnt}}"
+if(cnt > 0){
+	alert('성공적으로 입력했습니다.')
+	location.href= "emp_list"
+}else{
+	alert('실패...')
+	history.back
+}
+</script> 
+</body>
+</html>

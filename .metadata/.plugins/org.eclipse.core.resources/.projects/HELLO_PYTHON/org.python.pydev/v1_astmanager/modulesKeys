@@ -46,9 +46,13 @@ day06.omok01|D:\workspace_python\HELLO_PYTHON\day06\omok01.py
 day06.omok02|D:\workspace_python\HELLO_PYTHON\day06\omok02.py
 day06.omok03_19|D:\workspace_python\HELLO_PYTHON\day06\omok03_19.py
 day07.__init__|D:\workspace_python\HELLO_PYTHON\day07|^
-day07.myDelete|D:\workspace_python\HELLO_PYTHON\day07\myDelete.py
-day07.myInsert|D:\workspace_python\HELLO_PYTHON\day07\myInsert.py
-day07.myUpdate|D:\workspace_python\HELLO_PYTHON\day07\myUpdate.py
+day07.mydelete|D:\workspace_python\HELLO_PYTHON\day07\mydelete.py
+day07.myinsert|D:\workspace_python\HELLO_PYTHON\day07\myinsert.py
 day07.myselect|D:\workspace_python\HELLO_PYTHON\day07\myselect.py
+day07.myupdate|D:\workspace_python\HELLO_PYTHON\day07\myupdate.py
 day09.__init__|D:\workspace_python\HELLO_PYTHON\day09|^
+day09.daoemp|D:\workspace_python\HELLO_PYTHON\day09\daoemp.py
 day09.myflask01|D:\workspace_python\HELLO_PYTHON\day09\myflask01.py
+day10.__init__|D:\workspace_python\HELLO_PYTHON\day10|^
+day10.daoemp|D:\workspace_python\HELLO_PYTHON\day10\daoemp.py
+day10.myflask01|D:\workspace_python\HELLO_PYTHON\day10\myflask01.py

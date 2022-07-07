@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+</style>
+</head>
+<body>
+<table border=1px>
+<tr>
+	<td>사번</td>
+	<td><input type="text" value="{{emp.e_id}}"> </td>
+</tr>
+
+<tr>
+	<td>이름</td>
+	<td><input type="text" value="{{emp.e_id}}"> </td>
+</tr>
+<tr>
+	<td>성별</td>
+	<td><input type="text" value="{{emp.sex}}"> </td>
+</tr>
+<tr>
+	<td>주소</td>
+	<td><input type="text" value="{{emp.addr}}"> </td>
+</tr>
+
+<tr>
+	<td colspan="2">
+		
+		<input type="button" value="확인">
+	
+	</td>
+</tr>
+
+</table>
+
+</body>
+</html>

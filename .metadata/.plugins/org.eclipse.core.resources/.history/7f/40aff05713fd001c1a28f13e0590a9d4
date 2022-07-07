@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function done(){
+	location.href = "emp_mod?e_id={{e.e_id}}&e_name={{e.e_name}}&sex={{e.sex}}&e_id={{e.e_id}}";
+}
+</script>
+</head>
+<body>
+<table border=1px>
+<tr>
+	<td>사번</td>
+	<td><input type="text" value="{{emp.e_id}}"> </td>
+</tr>
+
+<tr>
+	<td>이름</td>
+	<td><input type="text" value="{{emp.e_id}}"> </td>
+</tr>
+<tr>
+	<td>성별</td>
+	<td><input type="text" value="{{emp.sex}}"> </td>
+</tr>
+<tr>
+	<td>주소</td>
+	<td><input type="text" value="{{emp.addr}}"> </td>
+</tr>
+
+<tr>
+	<td colspan="2">
+		
+		<input type="button" value="확인" onclick="fn_done()">
+	
+	</td>
+</tr>
+
+</table>
+
+</body>
+</html>
